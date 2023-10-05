@@ -54,7 +54,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         alignment: Alignment.bottomRight,
         child: FloatingActionButton(
           backgroundColor: _isButtonDisabled ? Colors.grey : Colors.blue,
-          onPressed: () {},
+          onPressed: _isButtonDisabled ? null : () {},
           child: const Icon(Icons.add),
         ),
       ),
